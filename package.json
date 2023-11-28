@@ -1,19 +1,41 @@
 {
-  "name": "atlas_starter_nodejs",
+  "name": "farm",
   "version": "1.0.0",
-  "description": "MongoDB Node.js driver and Atlas Starter Application",
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mongodb-university/atlas_starter_nodejs.git"
+  "description": "farm's website",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "prettier": "prettier --write .",
+    "lint": "next lint"
   },
-  "author": "chris.cho@mongodb.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mongodb-university/atlas_starter_nodejs/issues"
-  },
-  "homepage": "https://github.com/mongodb-university/atlas_starter_nodejs#readme",
+  "keywords": [],
+  "author": "Mathias Silva",
+  "license": "MIT",
   "dependencies": {
-    "mongodb": "^3.5.9"
+    "@chakra-ui/icons": "^1.1.1",
+    "@chakra-ui/next-js": "^2.1.4",
+    "@chakra-ui/react": "^2.4.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@vercel/analytics": "^1.0.2",
+    "framer-motion": "^10.12.16",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.1",
+    "next": "^13.4.4",
+    "next-sitemap": "^2.5.28",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.3.1",
+    "react-in-viewport": "^1.0.0-alpha.27",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.6",
+    "three": "^0.134.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^12.0.4",
+    "prettier": "^2.4.1"
   }
 }
